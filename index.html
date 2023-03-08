@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detector</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-16x16.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@100;400&family=Shantell+Sans:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@100;400&family=Shantell+Sans:wght@300&family=Tilt+Neon&display=swap');
+      </style> -->
+</head>
+<body>
+<!-- // api to be used https://api.github.com/users/USERNAME -->
+    <div class="wrapper">
+        <div class="container">
+            <!-- header creation -->
+            <div class="header">
+                <h1 class="imhead">DevDetective</h1>
+                <button class="mode"> <span class="modespan">Light</span>   <img src="./assets/images/moon-icon.svg" alt="" class="modeimage"></button>
+
+            </div>
+            <!-- search box creation -->
+            <div class="search">
+                <img src="./assets/images/search-icon.svg" alt="">
+                <input type="text" placeholder="Enter Github UserName"  class="input1" newusername>
+                <span nouser class="error"></span>
+                <button searchUser>Search</button>
+            </div>  
+
+            <!-- main content -->
+            <div class="main">
+                <!-- left main -->
+                <div class="left">
+                    <div class="imgcont">
+                        <img src="" alt="" height="117px" width="117px" useravatar>
+                        <p noimage></p>
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/mylogo.PNG" alt="" height="117px" width="117px" class="mylogo">
+                    </div>
+                    
+                   
+
+                </div>
+                <!-- right main -->
+                <div class="right">
+
+                    <div class="line1">
+                        <div class="partleft">
+                            <h1 naam></h1>
+                            <a href="/" username class="username"></a>
+                        </div>
+                        <span created class="date"></span>
+                    </div>
+
+                    <div class="line2">
+                        <p bio class="bio"></p>
+                    </div>
+
+                    <div class="highlights">
+                        <div class="repos">
+                            <h3>Repos</h3>
+                            <span repocount class="imspan"></span>
+                        </div>
+                        <div class="followers">
+                            <h3>Followers</h3>
+                            <span followcount class="imspan"></span>
+                        </div>
+                        <div class="following">
+                            <h3>Following</h3>
+                            <span followingcount class="imspan"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="links">
+                        <div class="line1 " id="pg">
+                            <a href="/" ><img src="./assets/images/location-icon.svg" alt=""><span location  class="change"></span></a>
+                            <a href="/" class="website "><img src="./assets/images/website-icon.svg" alt=""> <span website class="change1"></span> </a>
+                          
+                        </div>
+                        <div class="line1" id="pg1">
+                            <a href="/" ><img src="./assets/images/twitter-icon.svg" alt=""> <span twitter class="change2"></span></a>
+                            <a href="/"  class="company"><img src="./assets/images/company-icon.svg" alt="" ><span company class="change3"></span></a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
