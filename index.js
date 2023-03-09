@@ -76,6 +76,7 @@ async function fetchUserInfo(user){
     avatarImage.src=`${data?.avatar_url}`;
     naam.innerHTML=data?.name;
     userName.textContent=data?.login;
+    userName.setAttribute('href',`https://github.com/${data?.login}`);
     created.textContent="Joined " + data?.created_at;
     bio.textContent=data?.bio;
     repoCount.textContent=data?.public_repos;
@@ -144,6 +145,7 @@ async function searchNewUser(newuser){
     avatarImage.src=data?.avatar_url;
     naam.innerHTML=data?.name;
     userName.textContent=data?.login;
+    userName.setAttribute('href',`https://github.com/${data?.login}`);
     created.textContent="Joined " + data?.created_at;
     bio.textContent=data?.bio;
     repoCount.textContent=data?.public_repos;
